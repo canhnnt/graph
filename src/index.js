@@ -5,6 +5,7 @@ import ScenarioEditor from './App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from 'react-apollo';
 import { client } from './config/apollo-client-config';
+import './config/i18n';
 
 ReactDOM.render(<ApolloProvider client={client}>
   <ScenarioEditor />

@@ -57,7 +57,7 @@ const apolloClient = new ApolloClient({
 
 const systemDefaultData = {
   editorService: {
-    id: null,
+    id: 1,
     name: null,
     serviceId: 4885,
     serviceVersion: 2,

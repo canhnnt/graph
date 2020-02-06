@@ -1,0 +1,531 @@
+{
+  "common": {
+    "btnSave": "Save",
+    "btnInsert": "Insert",
+    "linkCreateEntity": "Create entity",
+    "btnAdd": "Add",
+    "btnClose": "Close",
+    "btnOk": "OK",
+    "btnCancel": "Cancel",
+    "btnDelete": "Delete",
+    "btnEdit": "Edit",
+    "btnDeselectAll": "Clear",
+    "btnSelectAll": "Select all",
+    "selectedItemLabel": "{num} items selected",
+    "entityType": {
+      "StringEntity": "String",
+      "NumberEntity": "Number",
+      "UrlEntity": "URL",
+      "DateEntity": "Date",
+      "TimeEntity": "Time",
+      "EmailAddressEntity": "Email address",
+      "JsonEntity": "JSON",
+      "SystemEntity": "System",
+      "Value": "Value",
+      "unCapital": {
+        "StringEntity": "string",
+        "NumberEntity": "number",
+        "UrlEntity": "url",
+        "DateEntity": "date",
+        "TimeEntity": "time",
+        "EmailAddressEntity": "email address",
+        "JsonEntity": "json",
+        "SystemEntity": "system",
+        "Value": "value"
+      }
+    },
+    "logoutBtn": "Logout",
+    "comma": ",",
+    "saveTo": "Save reply to:",
+    "noReply": "No reply",
+    "withReply": "With reply",
+    "btnUserReplySetting": "Go to user's reply setting"
+  },
+  "sidebar": {
+    "editor": "Editor",
+    "medialib": "Media library"
+  },
+  "dataRegistration": {
+    "title": {
+      "entity": "Variable",
+      "qa": "Q&A",
+      "intent": "Intent",
+      "tags": "Tags",
+      "dataIntegration": "Data Integration"
+    },
+    "description": {
+      "entity": "Configure settings required to save various kinds of data",
+      "qa": "Register set of Q&A which are to be used for Q&A step",
+      "intent": "Set keyword to start scenario from a specific step",
+      "tags": "Organize flowchart by grouping multiple steps",
+      "dataIntegration": "Configure settings required to integrate external data in this scenario"
+    }
+  },
+  "menubar": {
+    "addStartStep": "Add start step",
+    "chart": "Chart",
+    "list": "List",
+    "goEditingStep": "Go to editing step",
+    "searchPlaceholder": "Step ID"
+  },
+  "modals": {
+    "addStep": {
+      "title": "Add new step",
+      "selectEntity": "Select step type",
+      "goToSetting": "Go to step setting screen",
+      "memo": "Select a category",
+      "sendMessage": {
+        "label": "Send messages",
+        "items": {
+          "text": {
+            "title": "Text",
+            "description": "Send text messages"
+          },
+          "media": {
+            "title": "Media",
+            "description": "Send image / video / audio / PDF file"
+          },
+          "button": {
+            "title": "Button",
+            "description": "Display buttons user can click on"
+          }
+        },
+        "toggelGetUserReplyLabel": "Get user’s reply",
+        "toggleSaveUserReplyLabel": "Save user’s reply",
+        "saveUserReplyLabel": "Save into the variable"
+      },
+      "customizeFlow": {
+        "label": "Customize\nflow",
+        "items": {
+          "conditionEntity": {
+            "title": "Condition based on variable",
+            "description": "Make branch by the condition of entity value"
+          },
+          "conditionMessage": {
+            "title": "Condition based on user's input",
+            "description": "Make branch by the condition of user message"
+          },
+          "library": {
+            "title": "Library",
+            "description": "Retrieve a saved scenario in the library"
+          }
+        }
+      },
+      "searchManipulateData": {
+        "label": "Search /\nmanipulate data",
+        "items": {
+          "manipulateEntity": {
+            "title": "Manipulate entity",
+            "description": "Change or initialize the value of entity"
+          },
+          "dataIntegration": {
+            "title": "Data integration",
+            "description": "Run pre-set data integration"
+          }
+        }
+      },
+      "other": {
+        "label": "Others",
+        "items": {
+          "sendNotification": {
+            "title": "Send notification",
+            "description": "Send notification when user has passed this step"
+          },
+          "userSatisfaction": {
+            "title": "Ask user satisfaction",
+            "description": "Create a flow to collect user satisfaction feedback on the chatbot"
+          }
+        }
+      },
+      "qa": {
+        "label": "Q&A",
+        "items": {
+          "qa": {
+            "title": "Q&A",
+            "description": "Show answer in response to user message based on the Q&A data"
+          }
+        }
+      }
+    },
+    "confirmCloseSetting": {
+      "title": "Discard changes",
+      "body": "Are you sure you want to discard the changes?"
+    },
+    "confirmDelete": {
+      "title": "Delete step",
+      "body": "Are you sure you want to delete this step?<br/>this action cannot be undone"
+    },
+    "confirmSwitchStep": {
+      "title": "Edit another step",
+      "body": "Are you sure you want to edit another step?<br/>Changes to your currently edited step will be discarded"
+    },
+    "confirmSwitchToCreateEntity": {
+      "title": "Discard changes",
+      "body": "Are you sure you want to discard the changes in the currently editing variable and create new one?"
+    }
+  },
+  "notifications": {
+    "createEntitySuccess": "The variable has been created.",
+    "updateEntitySuccess": "The variable has been updated.",
+    "deleteEntitySuccess": "The variable has been deleted.",
+    "createStepSuccess": "The step has been created.",
+    "updateStepSuccess": "The step has been updated.",
+    "setPrevStep": "Set the previous step",
+    "setNextStep": "Set the next step",
+    "loadStepFail": "Failed to get the step info.",
+    "deleteStepSuccess": "The step has been deleted.",
+    "deleteStepFail": "Failed to delete the step.",
+    "createEntityFail": "Failed to create the variable.",
+    "updateEntityFail": "Failed to update the variable.",
+    "createStepFail": "Failed to create the step.",
+    "updateStepFail": "Failed to update the step.",
+    "loadEntityFail": "Failed to get the variable info.",
+    "deleteEntityFail": "Failed to delete the variable.",
+    "serverError": "Something went wrong. \nThe server encountered an internal error and was unable to complete your request. Please try again later."
+  },
+  "options": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "addNewStep": "Add new step",
+    "others": "Others",
+    "duplicate": "Duplicate",
+    "move": "Move",
+    "setIntentKeyword": "Set intent keyword",
+    "setAsEndPoint": "Set as end point",
+    "setJumpDestination": "Set jump destination"
+  },
+  "rightMenu": {
+    "setting": "Setting",
+    "simulator": "Simulator"
+  },
+  "settings": {
+    "titles":{
+      "text": "Text",
+      "button": "Button",
+      "conditionEntity": "Condition based on variable",
+      "conditionMessage": "Condition - Message",
+      "end": "End",
+      "entity": "Variable",
+      "userReply": "User’s reply setting",
+      "setting": "Setting"
+    },
+    "entityList": {
+      "tabCustom": "custom",
+      "tabSystem": "system",
+      "btnCreateNew": "Create new",
+      "noData": "No custom entity set.<br/>Please set one using the \"Create new\" button above",
+      "titleSystem": "These entities are used to run the scenario.",
+      "entityDetail": {
+        "title": "Detail",
+        "entityName": "Variable name",
+        "dataType": "Data type",
+        "memo": "Memo",
+        "default": "Default",
+        "validValue": "Valid value",
+        "numberTitle": "number of decimal places",
+        "usedIn": "Used in",
+        "nowHere": "Nowhere",
+        "noSet": "Not set",
+        "dateType": "Date type",
+        "dateFormat": "Date format",
+        "clearData": "Clear data",
+        "clear": "Clear data after the end of session",
+        "unClear": "Do not clear data after the end of session"
+      },
+      "filterForm": {
+        "btnFilter": "Filter",
+        "filterDataType": "Data type",
+        "filterCondition": "Condition",
+        "placeholderSearch": "Search by name",
+        "all": "All",
+        "used": "Used",
+        "notUsed": "Not used"
+      },
+      "modalConfirmDelete": {
+        "header": "Delete variable",
+        "body1": "Are you sure you want to delete the variable?",
+        "body2": "Variable name: "
+      }
+    },
+    "entitySetting": {
+      "newTitle": "Create new variable",
+      "editTitle": "Update variable",
+      "dataType": "Data type*",
+      "dataTypePlaceholder": "Select Field",
+      "datatTypeDes": "About data type",
+      "entityName": "Variable name*",
+      "entityNamePlaceholder": "Variable name",
+      "caption": "Unable to change once it is saved",
+      "memo": "Memo",
+      "memoPlaceholder": "Memo",
+      "defaultValue": "Default",
+      "defaultValuePlaceholder": "Default",
+      "clearAtEndNote": "Clear data at the end of session",
+      "numberSettingLabel": "Number of decimal places*",
+      "dateSettingLabel": "Date format*",
+      "optionalSetting": {
+        "label": "Optional settings",
+        "note": "Restrict values by matching keyword or regex"
+      },
+      "validates": {
+        "mandatory": "Mandatory",
+        "exists": "Already exists",
+        "notMatch": "Doesn't match with the defined keyword or regex"
+      }
+    },
+    "optional": {
+      "description": "Restrict values to save",
+      "memo": "Select type",
+      "PerfectMatchValidateKeyword": "Set keyword",
+      "RegexValidateKeyword": "Set regex",
+      "options": {
+        "keyword": "Keyword",
+        "keywordNote": "Values matching the keyword will be saved",
+        "regex": "Regex",
+        "regexNote1": "Values matching the ",
+        "regexNote2": " will be saved",
+        "regexLink": "regex"
+      },
+      "list": "List",
+      "validates": {
+        "maxLength": "Max.{{num}} characters"
+      }
+    }
+  },
+  "step": {
+    "button": {
+      "allButtons": "All buttons",
+      "else": "Else"
+    },
+    "end": {
+      "title": "End",
+      "tooltip": "Set the previous step"
+    },
+    "start": {
+      "title": "Start",
+      "tooltip": "Set the next step"
+    }
+  },
+  "stepName": {
+    "start": "Start",
+    "text": "Text",
+    "button": "Button",
+    "conditionEntity": "Condition based on variable",
+    "conditionMessage": "Condition<br/>- Message",
+    "end": "End"
+  },
+  "stepSettings": {
+    "text": {
+      "createEntity": "Create new variable",
+      "entityNotice": "※ Custom variable : Except for JSON",
+      "inputFieldTitle": "Register message",
+      "sampleImage": "Sample image",
+      "editTextButtonLabel": "Click and edit messages",
+      "inputLabel": "Input text messages to send*",
+      "inputLabelPlaceholder": "Input text to send",
+      "optionFieldTitle": "Optional settings",
+      "optionFieldDesc": "Send message using variable's value or the data acquired by data integration",
+      "selectDataIntegration": "Select data integration",
+      "selectDataIntegrationDescription": "You can copy the notation to express the data hit by data integration above",
+      "selectDataIntegrationPlaceholder": "Search by data integration name",
+      "selectDataIntegrationTitle": "Use the value acquired by data integration",
+      "selectEntity": "Select entity",
+      "selectEntityPlaceholder": "Search by entity name/data type",
+      "selectEntitySystem": "Select parameter",
+      "selectEntitySystemPlaceholder": "Search by entity name/data type",
+      "selectEntityTitle": "Use variable's value",
+      "dataIntegrationNoData": "No data integration set",
+      "btnInsert": "Insert",
+      "btnNotation": "Check notation",
+      "noticeMessage": "<b>Shift + Enter</b> to add a new line</br><b>Enter</b> to Sample image",
+      "options": {
+        "systems": {
+          "name": {
+            "userInfo": "User info",
+            "location": "Location",
+            "questionDb": "Question matched with database",
+            "answerShow": "Anser shown",
+            "responseFaction": "Response for User satisfaction",
+            "webURL": "Web Chatbot URL",
+            "visit": "The number of visit",
+            "userId": "User ID"
+          },
+          "memo": {
+            "userInfo": "Latest record of user info",
+            "location": "Latest user location info",
+            "questionDb": "The question hit in Q&A step",
+            "answerShow": "The answer sent in Q&A step",
+            "responseFaction": "The responce for the step \"User satisfaction\"",
+            "webURL": "The URL of webpage where the chatbot was used",
+            "visit": "The number of visit to chatbot by the user",
+            "userId": "ID given to each user"
+          }
+        },
+        "userInfo": {
+          "path": "path - The URL of the webpage where the chatbot is used",
+          "userAgent": "user_agent - OS/device/browser",
+          "language": "language - Language set in browser"
+        },
+        "location": {
+          "latitude": "latitude",
+          "longitude": "longitude"
+        }
+      }
+    },
+    "conditionEntity": {
+      "note": "This process will be executed from top to bottom",
+      "duplicateBranch": "The same condition should not be set for multiple branches.",
+      "conditionName": {
+        "label": "Condition title",
+        "placeholder": "e.g. Number of visit"
+      },
+      "btnAddNewBranch": {
+        "label": "Add new branch"
+      },
+      "addNewCondition": {
+        "label": "Add new condition"
+      },
+      "else": "Else",
+      "newBranchDefaulName": "Branch {{num}}",
+      "noConditions": "Please add condition",
+      "ModalConfirmDelete": {
+        "header": "Delete branch",
+        "body": "The branch is currently used. Are you sure you want to delete?<br/>The steps connected to this label will not be deleted"
+      },
+      "has_value": "has some value",
+      "before": "before",
+      "after": "after",
+      "createCondition": {
+        "createEntity": "Create new variable",
+        "duplicateCondition": "This condition is already set",
+        "title": "Set condition",
+        "condition": "Condtion",
+        "entity": "Variable",
+        "entityPlaceholder": "Select variable",
+        "conditionPlaceholder": "Select condition",
+        "noEntity": "There is no entity set that is compatible with the condition you selected",
+        "value": "*Value",
+        "valuePlaceholder": "Set value",
+        "date": "*Date",
+        "dateSelect": {
+          "asterisk": "x",
+          "specialDate": "Specify date",
+          "userSent": "the day the step passed by user",
+          "beforeChatDate": "{{day}} day before step passed by user",
+          "afterChatDate": "{{day}} day after step passed by user"
+        },
+        "valueInValid": "Incompatible with selected data type"
+      },
+      "dataConditions": {
+        "eqValue": "= *{{type}}",
+        "gtValue": "> *{{type}}",
+        "ltValue": "< *{{type}}",
+        "eqVariable": "= *variable",
+        "before": "before *date",
+        "after": "after *date",
+        "some": "has some value"
+      },
+      "validates": {
+        "title": {
+          "tooLong": "Max. {{limit}} characters",
+          "mandatory": "Mandatory"
+        },
+        "branch": {
+          "tooLong": "Max. {{limit}} characters",
+          "mandatory": "Mandatory"
+        }
+      }
+    },
+    "userReply": {
+      "waitMessage": "Get user’s reply",
+      "saveMessageFrom": "Save message from user",
+      "addEntity": "Save message to a variable",
+      "selecteEntity": "Select variable",
+      "saveTo": "Save to",
+      "searchPlaceHolder": "Search by variable name/data type",
+      "createEntity": "Create new variable"
+    },
+    "buttonSettings": {
+      "title": "Set button labels",
+      "sampleImage": "Sample image",
+      "optionalTitle": "Optional settings",
+      "optionalMessageDesc": "The message before the button labels",
+      "optionalButtonDesc": "Button labels",
+      "optionalFlowDesc": "Customize flowchart",
+      "toggleTitle": "Send text messages before the button labels",
+      "chkboxAllButtonSameFlow": "Set all buttons to follow the same flow",
+      "chkboxCustomizeFlow": "Customize the flow of \"else\"",
+      "editButtonLabel": "Click and edit button label",
+      "noticeMaxButton": "Max. {{num}} button labels",
+      "noticeMessage": "<b>Shift + Enter</b> to add a new line</br><b>Enter</b> to Sample image",
+      "labelAddButtonLabel": "Add button label",
+      "placeholderAddButtonLabel": "Button label",
+      "labelShowInsertEntityVal": "Insert entity value",
+      "placeholderSelectEntity": "Select entity",
+      "placeholderSearchSelectEntity": "Search by entity name/data type",
+      "createEntityClick": "Create new variable",
+      "noticeForEntityClick": "※ Custom variable : Except for JSON",
+      "labelBtnInsert": "Insert",
+      "titlePreview": "Preview",
+      "previewWarning1": "Register button label above",
+      "previewWarning2": "The buttons will be sent from top to buttom",
+      "previewWarning3": "※ The labels on the flowchart can be changed regardless of the sending order",
+      "placeholderTextFieldBtnLabel": "Button label",
+      "modalConfirmDelTitle": "Delete button label",
+      "modalConfirmDelBody": "The selected button label is currently used. Are you sure you want to delete?<br/>The steps connected to this label will not be deleted",
+      "tooltipCustomizeFlow": "if unchecked, when the user sends a message other than what is on the buttons, the bot will resend the button selection",
+      "validates": {
+        "maxLength": "Max. {{num}} characters"
+      }
+    }
+  },
+  "topMenu": {
+    "detailsForStep": {
+      "title": {
+        "stepInfo": "Step info",
+        "userMessage": "User’s reply"
+      },
+      "notSelected": "The info of the selected step will be displayed here",
+      "selected": {
+        "startStep": "Start step cannot be edited",
+        "endStep": "End step cannot be edited",
+        "undefined": "Please configure settings",
+        "multiple": "Multiple steps selected",
+        "buttonStep": {
+          "allButtonSameFlow": "make all buttons to follow the same flow",
+          "customizeElseFlow": "customize the flow of 'else'"
+        }
+      },
+      "userMessage": {
+        "waitForUserInput": {
+          "userReply": "Get user’s reply",
+          "default": "Don't get user's reply"
+        },
+        "saveMessageToEntities": {
+          "save": "Save user’s reply ",
+          "notSave": "Don't save user’s reply "
+        }
+      }
+    },
+    "locations": {
+      "title": "Root scenario",
+      "placeholderTextarea": "Comment"
+    }
+  },
+  "simulator": {
+    "btnPublishScenario": "Publish Your Scenario to Executor"
+  },
+  "validates": {
+    "maxLength1": "Max {{num}} characters",
+    "maxLength2": "Max {{num}} characters",
+    "tooLong": "The message might not fit within the chat window",
+    "limit": "Can not enter anymore",
+    "mandatory": "Mandatory",
+    "wrongType": "Incompatible with selected data type"
+  },
+  "sampleImage": {
+    "entity": {
+      "value": "'s value"
+    }
+  }
+}

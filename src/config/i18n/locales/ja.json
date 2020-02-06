@@ -1,0 +1,532 @@
+{
+  "common": {
+    "btnSave": "保存する",
+    "btnInsert": "インサート",
+    "linkCreateEntity": "エンティティ作成",
+    "btnAdd": "追加",
+    "btnClose": "閉じる",
+    "btnOk": "OK",
+    "btnCancel": "キャンセル",
+    "btnDelete": "削除",
+    "btnEdit": "編集",
+    "btnDeselectAll": "クリア",
+    "btnSelectAll": "全選択",
+    "selectedItemLabel": "選択数: {num}",
+    "entityType": {
+      "StringEntity": "文字列",
+      "NumberEntity": "数字",
+      "UrlEntity": "URL",
+      "DateEntity": "日付",
+      "TimeEntity": "時刻",
+      "EmailAddressEntity": "メールアドレス",
+      "JsonEntity": "JSON",
+      "SystemEntity": "システム",
+      "Value": "指定値",
+      "unCapital": {
+        "StringEntity": "文字列",
+        "NumberEntity": "数字",
+        "UrlEntity": "url",
+        "DateEntity": "日付",
+        "TimeEntity": "時刻",
+        "EmailAddressEntity": "メールアドレス",
+        "JsonEntity": "json",
+        "SystemEntity": "システム",
+        "Value": "指定値"
+      }
+    },
+    "logoutBtn": "ログアウト",
+    "comma": "、",
+    "saveTo": "保存先:",
+    "noReply": "ユーザー返答なし",
+    "withReply": "ユーザー返答あり",
+    "btnUserReplySetting": "ユーザー返答の設定へ"
+  },
+  "sidebar": {
+    "editor": "エディター画面",
+    "medialib": "メディアライブラリー"
+  },
+  "dataRegistration": {
+    "title": {
+      "entity": "エンティティ ",
+      "qa": "Q&A",
+      "intent": "インテント",
+      "tags": "タグ",
+      "dataIntegration": "タグ"
+    },
+    "description": {
+      "entity": "シナリオで取得/参照するデータの保存先を登録します",
+      "qa": "Q&Aステップで使われる質問と回答のセットを登録します",
+      "intent": "特定のステップを開始するためのキーワードを設定します",
+      "tags": "複数のステップをグループ化することでフローチャートを整理します",
+      "dataIntegration": "シナリオで活用したい外部データと連携するために必要な設定を行います"
+    }
+  },
+  "menubar": {
+    "addStartStep": "スタートの追加",
+    "chart": "チャート",
+    "list": "リスト",
+    "goEditingStep": "編集中のステップへ",
+    "searchPlaceholder": "ステップID"
+  },
+  "modals": {
+    "addStep": {
+      "title": "ステップの追加",
+      "selectEntity": "ステップのタイプを選択してください",
+      "goToSetting": "ステップの設定へ",
+      "memo": "カテゴリーを選んでください",
+      "sendMessage": {
+        "label": "メッセージの送信",
+        "items": {
+          "text": {
+            "title": "テキスト",
+            "description": "テキスト形式のメッセージを送信します"
+          },
+          "media": {
+            "title": "メディア",
+            "description": "画像・動画・音声・PDFファイルのいずれかを送信します"
+          },
+          "button": {
+            "title": "ボタン",
+            "description": "ユーザーがクリックできるボタンを表示します"
+          }
+        },
+        "toggelGetUserReplyLabel": "ユーザーの返答を取得する",
+        "toggleSaveUserReplyLabel": "ユーザーの返答を保存する",
+        "saveUserReplyLabel": "エンティティに保存"
+      },
+      "customizeFlow": {
+        "label": "フローのカスタマイズ",
+        "items": {
+          "conditionEntity": {
+            "title": "フロー分岐 エンティティ",
+            "description": "エンティティの値によってフローを分けます"
+          },
+          "conditionMessage": {
+            "title": "フロー分岐 メッセージ",
+            "description": "ユーザーメッセージの内容でフローを分けます"
+          },
+          "library": {
+            "title": "ライブラリー",
+            "description": "ライブラリーに作成したシナリオを呼び出します"
+          }
+        }
+      },
+      "searchManipulateData": {
+        "label": "データの参照・操作",
+        "items": {
+          "manipulateEntity": {
+            "title": "エンティティ操作",
+            "description": "エンティティの値を変更・初期化します"
+          },
+          "dataIntegration": {
+            "title": "データ連携",
+            "description": "データ登録メニューで設定したデータ連携を実行します"
+          }
+        }
+      },
+      "receiveNotification": {
+        "label": "通知を受け取る",
+        "items": {
+          "sendNotification": {
+            "title": "通知を受信",
+            "description": "ユーザーがこのステップを通過したときに通知を受け取ります"
+          },
+          "userSatisfaction": {
+            "title": "満足度を尋ねる",
+            "description": "ボットの応答に対する満足度を尋ねるフローを作成します"
+          }
+        }
+      },
+      "qa": {
+        "label": "Q&A",
+        "items": {
+          "qa": {
+            "title": "Q&A",
+            "description": "予め登録したQ&Aデータを元にユーザーの発言内容に応じた回答を表示します"
+          }
+        }
+      }
+    },
+    "confirmCloseSetting": {
+      "title": "変更の破棄",
+      "body": "設定内容を破棄しますか？"
+    },
+    "confirmDelete": {
+      "title": "ステップの削除",
+      "body": "ステップを削除しますか？<br/>この操作は取り消せません。"
+    },
+    "confirmSwitchStep": {
+      "title": "別のステップの編集へ切り替え",
+      "body": "別のステップの編集に切り替えますか？<br/>現在編集中のステップの設定内容は破棄されます"
+    },
+    "confirmSwitchToCreateEntity": {
+      "title": "変更の破棄",
+      "body": "エンティティが編集されています。編集内容を破棄しますか？"
+    }
+  },
+  "notifications": {
+    "createEntitySuccess": "エンティティが作成されました。",
+    "updateEntitySuccess": "エンティティの設定が更新されました。",
+    "deleteEntitySuccess": "エンティティを削除しました。",
+    "createStepSuccess": "ステップが作成されました。",
+    "updateStepSuccess": "ステップの設定が更新されました。",
+    "setPrevStep": "前のステップを設定してください",
+    "setNextStep": "次のステップを設定してください",
+    "loadStepFail": "ステップ情報の取得に失敗しました。",
+    "deleteStepSuccess": "ステップを削除しました。",
+    "deleteStepFail": "ステップの削除に失敗しました。",
+    "createEntityFail": "エンティティの作成に失敗しました。",
+    "updateEntityFail": "エンティティの更新に失敗しました。",
+    "createStepFail": "ステップの作成に失敗しました。",
+    "updateStepFail": "ステップの更新に失敗しました。",
+    "loadEntityFail": "エンティティの取得に失敗しました。",
+    "deleteEntityFail": "エンティティの削除に失敗しました。",
+    "serverError": "一時的なエラーが発生しました。\n内部のエラーにより、リクエストを処理できません。再度時間をおいてお試しください。"
+  },
+  "options": {
+    "edit": "編集",
+    "delete": "削除",
+    "addNewStep": "ステップの追加",
+    "others": "その他",
+    "duplicate": "複製",
+    "move": "移動",
+    "setIntentKeyword": "インテント設定",
+    "setAsEndPoint": "エンドポイントに設定",
+    "setJumpDestination": "ジャンプ先変更"
+  },
+  "rightMenu": {
+    "setting": "データ設定",
+    "simulator": "シミュレーター"
+  },
+  "settings": {
+    "titles": {
+      "text": "テキスト",
+      "button": "ボタン",
+      "conditionEntity": "フロー分岐　エンティティ",
+      "conditionMessage": "フロー分岐メッセージ",
+      "end": "エンド",
+      "entity": "エンティティ",
+      "userReply": "ユーザーの返答設定",
+      "setting": "設定"
+    },
+    "entityList": {
+      "tabCustom": "カスタム",
+      "tabSystem": "システム",
+      "btnCreateNew": "新規作成",
+      "noData": "カスタムエンティティが設定されていません。「新規作成」ボタンより設定してください",
+      "titleSystem": "シナリオを実行する上で必要なデータが保存されます",
+      "entityDetail": {
+        "title": "選択中のエンティティ詳細",
+        "entityName": "エンティティ名",
+        "dataType": "データ型",
+        "memo": "メモ",
+        "default": "初期値",
+        "validValue": "保存可能なワード",
+        "numberTitle": "小数点以下の桁数",
+        "usedIn": "使用箇所",
+        "nowHere": "使用されていません",
+        "noSet": "設定されていません",
+        "dateType": "日付タイプ",
+        "dateFormat": "日付の表示形式",
+        "clearData": "データの削除",
+        "clear": "会話終了時にデータを削除する",
+        "unClear": "会話終了時にデータを削除しない"
+      },
+      "filterForm": {
+        "btnFilter": "絞り込み",
+        "filterDataType": "データ型",
+        "filterCondition": "使用の有無",
+        "placeholderSearch": "エンティティ名で検索",
+        "all": "指定なし",
+        "used": "使用中",
+        "notUsed": "使用されていない"
+      },
+      "modalConfirmDelete": {
+        "header": "エンティティの削除",
+        "body1": "このエンティティを削除しますか？",
+        "body2": "エンティティ名："
+      }
+    },
+    "entitySetting": {
+      "newTitle": "新規作成",
+      "editTitle": "エンティティの編集",
+      "dataType": "データ型*",
+      "dataTypePlaceholder": "データ型",
+      "datatTypeDes": "データ型について",
+      "entityName": "エンティティ名*",
+      "entityNamePlaceholder": "エンティティ名",
+      "caption": "保存後の変更はできません",
+      "memo": "メモ",
+      "memoPlaceholder": "メモ",
+      "defaultValue": "初期値",
+      "defaultValuePlaceholder": "初期値",
+      "clearAtEndNote": "会話終了時にデータを削除する",
+      "numberSettingLabel": "小数点以下の桁数*",
+      "dateSettingLabel": "日付の表示形式*",
+      "optionalSetting": {
+        "label": "オプション設定",
+        "note": "保存できる値をキーワードまたは正規表現で制限します"
+      },
+      "validates": {
+        "mandatory": "選択してください",
+        "exists": "既存のエンティティと同じ名前はつけられません",
+        "notMatch": "オプション設定で指定したキーワードまたは正規表現と一致しません"
+      }
+    },
+    "optional": {
+      "description": "保存する値の制限",
+      "memo": "制限する方法を選択",
+      "PerfectMatchValidateKeyword": "キーワード",
+      "RegexValidateKeyword": "正規表現",
+      "options": {
+        "keyword": "キーワード",
+        "keywordNote": "キーワードに完全一致する値のみ保存します",
+        "regex": "正規表現",
+        "regexNote1": "設定した",
+        "regexNote2": "に一致する値のみ保存します",
+        "regexLink": "正規表現"
+      },
+      "list": "リスト",
+      "validates": {
+        "maxLength": "{{num}}字以内で入力してください"
+      }
+    }
+  },
+  "step": {
+    "button": {
+      "allButtons": "全てのボタン",
+      "else": "いずれにも\n該当しない場合"
+    },
+    "end": {
+      "title": "エンド",
+      "tooltip": "前のステップを設定してください"
+    },
+    "start": {
+      "title": "スタート",
+      "tooltip": "次のステップを設定してください"
+    }
+  },
+  "stepName": {
+    "start": "スタート",
+    "text": "テキスト",
+    "button": "ボタン",
+    "conditionEntity": "フロー分岐<br/>エンティティ",
+    "conditionMessage": "フロー分岐<br/>メッセージ",
+    "end": "エンド"
+  },
+  "stepSettings": {
+    "text": {
+      "createEntity": "エンティティ作成",
+      "entityNotice": "※　カスタムエンティティ：JSON以外",
+      "inputFieldTitle": "送信するメッセージの設定",
+      "sampleImage": "イメージ",
+      "editTextButtonLabel": "クリックしてメッセージを編集",
+      "inputLabel": "送信するメッセージを入力してください*",
+      "inputLabelPlaceholder": "送信するメッセージを入力",
+      "optionFieldTitle": "オプション設定",
+      "optionFieldDesc": "エンティティの値やデータ連携で取得した値を使ってメッセージを送る",
+      "selectDataIntegration": "データ連携を選択してください",
+      "selectDataIntegrationDescription": "上記データ連携でヒットしたデータの表記方法をコピーできます。",
+      "selectDataIntegrationPlaceholder": "データ連携名で検索",
+      "selectDataIntegrationTitle": "データ連携で取得した値を使う",
+      "selectEntity": "エンティティを選択してください",
+      "selectEntityPlaceholder": "エンティティ名・データ型で検索",
+      "selectEntitySystem": "パラメータを選択",
+      "selectEntitySystemPlaceholder": "エンティティ名・データ型で検索",
+      "selectEntityTitle": "エンティティの値を使う",
+      "dataIntegrationNoData": "データ連携が設定されていません",
+      "btnInsert": "テキストエリアに挿入",
+      "btnNotation": "表記法をチェック",
+      "noticeMessage": "<b>Shift + Enter</b> で改行</br><b>Enter</b> で決定",
+      "options": {
+        "systems": {
+          "name": {
+            "userInfo": "ユーザー情報",
+            "location": "位置情報",
+            "questionDb": "ヒットした質問",
+            "answerShow": "表示された回答",
+            "responseFaction": "\"満足度を尋ねる\"への回答",
+            "webURL": "起動元URL",
+            "visit": "訪問回数",
+            "userId": "ユーザーID"
+          },
+          "memo": {
+            "userInfo": "直近で記録されたユーザー情報",
+            "location": "直近でユーザーから送信された位置情報",
+            "questionDb": "Q&Aでヒットした質問",
+            "answerShow": "Q&Aで表示された回答",
+            "responseFaction": "「満足度を尋ねる」ステップでの回答",
+            "webURL": "チャットボットとの会話が行われたWebページのURL",
+            "visit": "ユーザーがチャットボットを訪問した回数",
+            "userId": "訪問したユーザーにユニークに付与されるID"
+          }
+        },
+        "userInfo": {
+          "path": "path - ユーザがチャットしたWebページのURL",
+          "userAgent": "user_agent - OS/端末/ブラウザなどの情報",
+          "language": "language - ブラウザの設定言語"
+        },
+        "location": {
+          "latitude": "latitude - 緯度",
+          "longitude": "longitude - 経度"
+        }
+      }
+    },
+    "conditionEntity": {
+      "note": "上から順番に処理されます",
+      "duplicateBranch": "複数のフロー分岐で同じ内容は設定できません。",
+      "conditionName": {
+        "label": "条件グループ名",
+        "placeholder": "ex) 訪問回数"
+      },
+      "btnAddNewBranch": {
+        "label": "フロー分岐の追加"
+      },
+      "addNewCondition": {
+        "label": "条件の追加"
+      },
+      "else": "いずれにも\n該当しない場合",
+      "newBranchDefaulName": "フロー分岐 {{num}}",
+      "noConditions": "条件を設定してください",
+      "ModalConfirmDelete": {
+        "header": "条件の削除",
+        "body": "フローチャートで使用中の条件を削除してもよろしいですか？<br/>後続のステップは削除されません。"
+      },
+      "has_value": "が値を持つ",
+      "before": "＜ (早い)",
+      "after": "＞ (遅い)",
+      "createCondition": {
+        "createEntity": "エンティティ作成",
+        "duplicateCondition": "同一の条件が設定済みです",
+        "title": "条件の設定",
+        "condition": "条件",
+        "entity": "エンティティ",
+        "entityPlaceholder": "エンティティを選択",
+        "conditionPlaceholder": "条件を選択",
+        "noEntity": "選択した条件で使えるデータ型のエンティティがありません",
+        "value": "*指定値",
+        "valuePlaceholder": "指定値を入力",
+        "date": "*日付",
+        "dateSelect": {
+          "asterisk": "＊",
+          "specialDate": "日付を指定",
+          "userSent": "ステップを通過した日",
+          "beforeChatDate": "ステップを通過した日の{{day}}日前",
+          "afterChatDate": "ステップを通過した日の{{day}}日後"
+        },
+        "valueInValid": "データ型と値が一致していません"
+      },
+      "dataConditions": {
+        "eqValue": "＝*{{type}}",
+        "gtValue": "＞*{{type}}",
+        "ltValue": "＜*{{type}}",
+        "eqVariable": "＝*エンティティ",
+        "before": "＜ (早い)",
+        "after": "＞ (遅い)",
+        "some": "が値を持つ"
+      },
+      "validates": {
+        "title": {
+          "tooLong": "{{limit}}字以内で入力してください",
+          "mandatory": "入力必須です"
+        },
+        "branch": {
+          "tooLong": "{{limit}}字以内で入力してください",
+          "mandatory": "入力必須です"
+        }
+      }
+    },
+    "userReply": {
+      "waitMessage": "ユーザーの返答を取得する",
+      "noWaitMessage": "ユーザーの発言を待機しない",
+      "saveMessageFrom": "ユーザーの返答を保存する",
+      "addEntity": "保存先エンティティの追加",
+      "selecteEntity": "保存先のエンティティを選択",
+      "saveTo": "保存先エンティティ",
+      "searchPlaceHolder": "エンティティ名・データ型で検索",
+      "createEntity": "エンティティ作成"
+    },
+    "buttonSettings": {
+      "title": "送信する内容の設定",
+      "sampleImage": "イメージ",
+      "optionalTitle": "オプション設定",
+      "optionalMessageDesc": "ボタン前のメッセージ",
+      "optionalButtonDesc": "ボタンラベル",
+      "optionalFlowDesc": "フローチャートのカスタマイズ",
+      "toggleTitle": "ボタンの前にテキストメッセージを表示する",
+      "chkboxAllButtonSameFlow": "全てのボタンラベルを同じフローに繋げる",
+      "chkboxCustomizeFlow": "「いずれにも該当しない場合」のフローをカスタマイズする",
+      "editButtonLabel": "クリックしてボタンラベルを編集",
+      "noticeMaxButton": "登録できるボタンラベルは{{num}}個までです",
+      "noticeMessage": "<b>Shift + Enter</b> で改行</br><b>Enter</b> で決定",
+      "labelAddButtonLabel": "ボタンラベルの追加",
+      "placeholderAddButtonLabel": "ボタンに表示するテキスト",
+      "labelShowInsertEntityVal": "エンティティの値を挿入する",
+      "placeholderSelectEntity": "エンティを選択",
+      "placeholderSearchSelectEntity": "エンティティ名・データ型で検索",
+      "createEntityClick": "エンティティ作成",
+      "noticeForEntityClick": "※　JSON以外のエンティティ",
+      "labelBtnInsert": "インサート",
+      "titlePreview": "プレビュー",
+      "previewWarning1": "太枠内「ボタンラベルの追加」より、送信したいボタンに表示するテキストを登録してください",
+      "previewWarning2": "上から順番に送信されます",
+      "previewWarning3": "※ フローチャート上のラベルの表示順は送信の順番とは関係なく自由に変更可能です",
+      "placeholderTextFieldBtnLabel": "ボタンに表示するテキスト",
+      "modalConfirmDelTitle": "ボタンラベルの削除",
+      "modalConfirmDelBody": "フローチャートで使用中のボタンラベルを削除してよろしいですか<br/>後続のステップは削除されません。",
+      "tooltipCustomizeFlow": "チェックをつけない場合は、ユーザーがボタンラベル以外のメッセージを送信した場合、再度ボタンラベルを送信します。",
+      "validates": {
+        "maxLength": "一度に送信できるメッセージは{{num}}文字までです"
+      }
+    }
+  },
+  "topMenu": {
+    "detailsForStep": {
+      "title": {
+        "stepInfo": "ステップ情報",
+        "userMessage": "ユーザーの返答"
+      },
+      "notSelected": "選択したステップの情報がここに表示されます",
+      "selected": {
+        "startStep": "スタートステップは編集できません",
+        "endStep": "エンドステップは編集できません",
+        "undefined": "設定してください",
+        "multiple": "複数のステップを選択中",
+        "buttonStep": {
+          "allButtonSameFlow": "全てのボタンラベルに同じフローを持たせる",
+          "customizeElseFlow": "「いずれにも該当しない場合」のフローをカスタマイズする"
+        }
+      },
+      "userMessage": {
+        "waitForUserInput": {
+          "userReply": "ユーザーの返答を取得する",
+          "default": "ユーザーの返答を取得しない"
+        },
+        "saveMessageToEntities": {
+          "save": "ユーザーの返答を保存する",
+          "notSave": "ユーザーの返答を保存しない"
+        }
+      }
+    },
+    "locations": {
+      "title": "ルートシナリオ",
+      "placeholderTextarea": "メモを入力できます"
+    }
+  },
+  "simulator": {
+    "btnPublishScenario": "シナリオをシミュレーターに反映"
+  },
+  "validates": {
+    "maxLength1": "一度に送信できるメッセージは{{num}}字までです",
+    "maxLength2": "{{num}}字以内で入力してください",
+    "tooLong": "吹き出しが画面内に収まらない可能性があります",
+    "limit": "18字以内で入力してください",
+    "mandatory": "入力必須です",
+    "wrongType": "データ型から外れる値です"
+  },
+  "sampleImage": {
+    "entity": {
+      "value": "の値"
+    }
+  }
+}
