@@ -1,0 +1,36 @@
+{
+  "presets": [["@babel/preset-env", {
+    "targets": {
+      "node": true
+    }
+  }], "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "css-modules-transform",
+    "@babel/plugin-transform-runtime",
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "cleanupIDs": true
+            },
+            {
+              "removeDesc": true
+            },
+            {
+              "removeTitle": true
+            },
+            {
+              "removeUselessDefs": true
+            }
+          ]
+        }
+      }
+    ],
+    ["module-resolver", {
+      "root": ["./src"]
+    }]
+  ]
+}
